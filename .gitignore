@@ -1,0 +1,45 @@
+# Environment variables
+.env
+
+# Python virtual environment
+venv
+
+credentials
+credentials-single/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OAuth credential files (NEVER commit these!)
+gmail.json
+sheet.json
+gsheet.json
+google_form.json
+gdoc.json
+youtube.json
+credentials/*.json
+!credentials/README.md
+!credentials/.gitignore
+
+# Frontend directories (if present)
+frontend
+ChatVerse-Frontend-Development
+ChatVerse-AI-Development
+dodopayments-python
+AAStandalone_MCP
+# Logs
+*.log
+nohup.out
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

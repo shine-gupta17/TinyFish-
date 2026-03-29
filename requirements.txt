@@ -1,0 +1,63 @@
+# FastAPI and Server
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+python-multipart
+
+# Data Validation
+pydantic[email]==2.11.7
+
+# Environment & Config
+python-dotenv
+dodopayments
+
+# Database & Storage
+supabase
+boto3
+
+# Async HTTP Client (for connection pooling and async operations)
+httpx[http2]
+dodopayments
+# Security
+itsdangerous
+
+# AI & ML (with async support)
+groq
+openai
+langchain==0.3.13
+langchain-core
+langchain-groq
+langchain-openai
+langchain-pinecone
+
+# Vector Database
+pinecone
+
+# Document Processing
+PyMuPDF
+beautifulsoup4
+
+# Payment Processing
+razorpay
+
+# Google APIs
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+
+# Notion API
+notion-client
+
+# Email Service
+sendgrid
+
+# Utilities
+cachetools
+requests
+
+# Production Monitoring (optional but recommended)
+# prometheus-fastapi-instrumentator
+# sentry-sdk[fastapi]
+
+itsdangerous
+azure-identity

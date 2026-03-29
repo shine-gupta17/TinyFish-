@@ -1,0 +1,99 @@
+{
+  "recipient": {
+    "id": "<PSID>"
+  },
+  "message": {
+    "attachment": {
+      "type": "image",
+      "payload": {
+        "url": "https://www.ycombinator.com/vite/assets/garry_and_sam-BDiyZpUw.webp",
+        "is_reusable": true
+      }
+    }
+  },
+  "messaging_type": "RESPONSE"
+}
+
+{
+  "recipient": {
+    "id": "<PSID>"
+  },
+  "message": {
+    "attachment": {
+      "type": "image",
+      "payload": {
+        "url": "https://www.ycombinator.com/vite/assets/garry_and_sam-BDiyZpUw.webp",
+        "is_reusable": true
+      }
+    }
+  },
+  "messaging_type": "RESPONSE"
+}
+
+
+// simple message
+{
+  "recipient": {
+    "id": "1141713044442580"
+  },
+  "message": {
+    "text": "hey this is a test from social flow"
+  },
+  "tag": "POST_PURCHASE_UPDATE",
+  "messaging_type": "MESSAGE_TAG"
+} 
+
+
+# button message type
+{
+  "recipient": {
+    "id": "1234567890"
+  },
+  "message": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "button",
+        "text": "Hi Rohit! Click the button below to view your booking:",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "https://yourhotelbooking.com/confirmation?id=1234",
+            "title": "View Booking"
+          }
+        ]
+      }
+    }
+  },
+  "messaging_type": "RESPONSE"
+}
+
+
+
+# quick message type (bubble)
+{
+  "recipient": {
+    "id": "1141713044442580"
+  },
+  "message": {
+    "text": "What do you want to do next?",
+    "quick_replies": [
+      {
+        "content_type": "text",
+        "title": "View Booking",
+        "payload": "VIEW_BOOKING"
+      },
+      {
+        "content_type": "text",
+        "title": "Cancel Booking",
+        "payload": "CANCEL_BOOKING"
+      },
+      {
+        "content_type": "text",
+        "title": "Help",
+        "payload": "HELP"
+      }
+    ]
+  },
+  "messaging_type": "RESPONSE"
+}

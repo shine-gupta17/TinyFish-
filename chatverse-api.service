@@ -1,0 +1,16 @@
+[Unit]
+Description=ChatVerse API - Async Optimized
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/path/to/ChatVerse-Backend-Dev
+Environment="PATH=/path/to/ChatVerse-Backend-Dev/venv/bin"
+EnvironmentFile=/path/to/ChatVerse-Backend-Dev/.env
+ExecStart=/path/to/ChatVerse-Backend-Dev/venv/bin/uvicorn app:app --host 0.0.0.0 --port 8000 --workers 4
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,32 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+python-multipart
+pydantic[email]==2.11.7
+python-dotenv
+supabase
+boto3
+httpx[http2]
+itsdangerous
+groq
+openai
+langchain==0.3.13
+langchain-core
+langchain-groq
+langchain-openai
+langchain-pinecone
+pinecone
+PyMuPDF
+beautifulsoup4
+razorpay
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+notion-client
+cachetools
+requests
+
+# NEW PACKAGES FOR CONCURRENCY FIXES - ADD THESE
+redis==5.0.1           # Redis client for caching
+slowapi==0.1.9         # Rate limiting
+tenacity==8.2.3        # Retry logic with exponential backoff

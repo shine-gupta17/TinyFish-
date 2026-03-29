@@ -1,0 +1,9 @@
+{
+  "client_id": "779b767e-9d3b-40c9-a2d6-0d74229ce9e9",
+  "client_secret": "bcb419f3-8313-4fca-8d74-896df9c6b7c7",
+  "tenant_id": "common",
+  "authority": "https://login.microsoftonline.com/common",
+  "display_name": "ChatVerse Power BI",
+  "directory_tenant_id": "c166d4f4-64a4-46e8-8dd1-22eb43a26584",
+  "supported_account_types": "Multiple organizations"
+}
