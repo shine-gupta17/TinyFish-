@@ -45,6 +45,7 @@ from routers import transactions
 from routers import chat_pdf_upload
 from routers import rag_sessions
 from routers import chat_image_upload
+from routers import tinyfish
 from routers import hackathon
 
 
@@ -189,6 +190,7 @@ app.include_router(transactions.router)
 app.include_router(chat_pdf_upload.router)
 app.include_router(rag_sessions.router)
 app.include_router(chat_image_upload.router)
+app.include_router(tinyfish.router)
 app.include_router(hackathon.router)
 
 # Include Dodo Payments routers

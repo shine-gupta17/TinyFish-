@@ -40,7 +40,7 @@ async def register_for_hackathon(
     dietary_restrictions: Optional[str] = Body(None),
 ) -> JSONResponse:
     """
-    Register a user for the Agenticverse Hackathon.
+    Register a user for the TinyFish Hackathon.
     
     Parameters:
     - provider_id: User's provider ID (from ChatVerse auth)
@@ -122,7 +122,7 @@ async def register_for_hackathon(
             
             return APIResponse.success(
                 data=response["data"][0],
-                message="Registration successful! Welcome to Agenticverse Hackathon 🚀"
+                message="Registration successful! Welcome to the TinyFish Hackathon!"
             )
     
     except HTTPException:

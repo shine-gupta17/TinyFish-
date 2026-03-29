@@ -72,6 +72,12 @@ class Settings:
     # AI Models
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
+
+    # TinyFish Web Agent API
+    TINYFISH_API_KEY: str = os.getenv("TINYFISH_API_KEY", "")
+    TINYFISH_API_BASE_URL: str = os.getenv("TINYFISH_API_BASE_URL", "https://agent.tinyfish.ai")
+    TINYFISH_EXECUTE_PATH: str = os.getenv("TINYFISH_EXECUTE_PATH", "/v1/automation/run-sse")
+    TINYFISH_TIMEOUT_SECONDS: int = int(os.getenv("TINYFISH_TIMEOUT_SECONDS", "90"))
     
     # Monitoring
     SENTRY_DSN: str = os.getenv("SENTRY_DSN", "")

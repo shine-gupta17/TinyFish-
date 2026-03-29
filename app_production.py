@@ -37,6 +37,8 @@ from routers.google_forms import google_forms_auth
 from routers.google_meet import google_meet_auth
 from routers.linkedin import linkedin_auth
 from routers.gdoc import gdoc_auth
+from routers import tinyfish
+from routers import hackathon
 
 # Configure logging
 logging.basicConfig(
@@ -193,6 +195,8 @@ app.include_router(google_meet_auth.router)
 app.include_router(linkedin_auth.router)
 app.include_router(gdoc_auth.router)
 app.include_router(gdoc_auth.router_callback)
+app.include_router(tinyfish.router)
+app.include_router(hackathon.router)
 
 
 # Health Check Endpoints
